@@ -1,15 +1,11 @@
 import React from 'react';
 import { ChakraProvider, Box, Grid, theme } from '@chakra-ui/react';
-
+import './Global.scss';
 function About() {
   return (
-    <ChakraProvider theme={theme}>
-      <Box textAlign="center" fontSize="xl">
-        <Grid minH="1vh" p={3}>
-          <h2>About</h2>
-        </Grid>
-      </Box>
-    </ChakraProvider>
+    <div className="container">
+      <h1>About Me</h1>
+    </div>
   );
 }
 export default About;
